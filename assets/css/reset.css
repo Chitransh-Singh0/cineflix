@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition:  all 0.5s ease;
+}
+
+
+*, *::before, *::after{ box-sizing: border-box;}
+
+html{ font-family: var(--ff-inter);}
+
+h1, h2, h3, h4, h5, h6{ color: var(--white);}
+
+body{
+    background: var(--rich-black-fogra-29);
+    color: var(--off-white);
+    -webkit-font-smoothing: antialiased;
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    object-fit: cover;
+}
+
+/* Remove defaults of form */
+input, button, select{
+    font: inherit;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+/* adding defaults of button */
+button{
+    color: var(--off-white);
+    cursor: pointer;
+}
+
+/* removing list style and markings */
+li{list-style: none;}
+
+/* listdefaults */
+a{
+    text-decoration: none;
+    display: block;
+    color: var(--off-white);
+}
+
+/* changing default scrollbar style */
+::-webkit-scrollbar{
+    background: transparent;
+    border-left: 2px solid var(--oxford-blue);
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--light-azure);
+    border-radius: 5em;
+    border: 3px solid var(--rich-black-fogra-29);
+}
